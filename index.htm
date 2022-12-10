@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato&family=Libre+Baskerville:ital@1&display=swap');
+        body{
+            font-family: 'Crimson Text', serif;
+            margin:0;
+        }
+        h1{
+            font-size:50px;
+            font-family: 'Lato', sans-serif;
+        }
+        h2{
+            font-size:40px;
+        }
+         h3{
+            font-size:25px;
+        }
+        p{
+            font-size:20px;
+            color:rgb(72, 70, 70);
+        }
+        .txt-highlight{
+            color:lightsalmon;
+            font-family: 'Libre Baskerville', serif;
+        }
+        .half-width{
+            width:40%;
+            float:left;
+            margin-left:5%;
+            padding-left:2%;
+        }
+        .half-width img{
+            width:100%;
+        }
+        section{
+            height:500px;
+            padding-bottom: 150px;
+        }
+        .top-banner{
+            background:url(images/top-banner.png) no-repeat;
+        }
+        .link-btn{
+            text-decoration:none;
+            color:white;
+            background:linear-gradient(45deg, lightsalmon,tomato);
+            padding:10px 20px;
+            font-weight:bold;
+            border-radius:5px;
+        }
+        .link-btn:hover{
+            background:linear-gradient(to right,tomato, lightsalmon);
+        }
+        .dream-sec{
+            background:url(images/dream-bg.png) no-repeat right;
+        }
+        .exp-sec .half-width{
+            box-shadow:5px 5px 20px rgb(151, 148, 148);
+            height:400px;
+            border-radius:5px;
+            background-color:white;
+        }
+        .exp-sec{
+            background-image:url(images/exp-bg.png);
+            background-repeat:no-repeat;
+            background-position:left;
+        }
+        .exp-sec #left-border{
+            border-left:7px solid;
+            border-image-slice:1;
+            border-image-source:linear-gradient(#f0a258,#73c5e5);
+        }
+        .exp-sec #right-border{
+            border-left:7px solid;
+            border-image-slice:1;
+            border-image-source: linear-gradient( lightsalmon,#ffb847);
+        }
+        footer p{
+            text-align:center;
+            color:grey;
+            font-size:15px;
+        }
+    </style>
+</head>
+<body>
+    <section class="top-banner">
+        <div class="half-width">
+            <h1>Welcome to</h1>
+            <h1><span class="txt-highlight">Web Developers</span> World</h1>
+            <h3>World Class Professional Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor quas fuga earum inventore autem laborum iste, eaque iure quaerat enim eius repellendus odio laudantium soluta. Nulla quo corrupti cupiditate?</p>
+            <a class="link-btn" href="">HIRE ME</a>
+        </div>
+        <div class="half-width">
+            <img src="images/jhankar.png" alt="wait...">
+        </div>
+    </section>
+
+    <section class="dream-sec">
+        <div class="half-width">
+            <img src="images/jhankar2.png" alt="wait...">
+        </div>
+        <div class="half-width">
+            <h2>Dream Big</h2>
+            <h3>Become World's most Popular Web Developer</h3>
+            <p>I already learned the basic HTML and CSS. I can build any simple website. I can even teach my grandma how to make simple website. My goal is to build 3 websites and learn advanced topics.</p>
+            <a class="link-btn" href="">Visit my LINKED IN</a>
+        </div>
+    </section>
+
+    <section class="exp-sec">
+        <h2>Experiences</h2>
+        <div class="half-width" id="left-border">
+            <h2>Full Stack Web Developer</h2>
+            <h3 class="txt-highlight">2021-Present | Pro Level Developer</h3>
+            <p>I am the master of HTML, CSS and Javascript. I know everything needed to make a website function, efficient. I didn't stop with the web. I went beyond with most popular Javascript framework called Vue JS. I even know the deployment, server and security. I will give you 100% web solution.</p>
+        </div>
+        <div class="half-width" id="right-border">
+            <h2>Junior Web Developer</h2>
+            <h3 class="txt-highlight">2020-2021 | Programming Hero Learner</h3>
+            <p>They didn't offer me a job. But I made myself as a remote web developer. I made their website and showed it to them. They liked it. And uploaded the content. It was fun working at Programming Hero.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Saiful Islam 2022, all rights reserved.</p>
+    </footer>
+</body>
+</html>
